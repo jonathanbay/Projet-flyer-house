@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Shalimar&display=swap');
+
+body {
+    font-family: 'Dancing Script', cursive;
+}
+
+.conteneur {
+    height: 100vh;
+    margin: 0 200px;
+    border: 3px solid skyblue;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "a a a"
+        "b b c"
+        "b b d"
+        "e f g"
+        "h h i"
+        "h h i";
+}
+
+.bloc:nth-child(1){
+    grid-area: a;
+    background: rgb(18, 169, 196);
+    
+}
+.bloc:nth-child(2){
+    grid-area: b;
+    background: url(./media/house.jpg)center/cover;
+}
+.bloc:nth-child(3){
+    grid-area: c;
+    background: url(./media/dining-room.jpg)center/cover;
+}
+.bloc:nth-child(4){
+    grid-area: d;
+    background: url(./media/living.jpg)center/cover;
+}
+.bloc:nth-child(5){
+    grid-area: e;
+    background: url(./media/kitchen.jpg)center/cover;
+}
+.bloc:nth-child(6){
+    grid-area: f;
+    background: url(./media/bedroom.jpg)center/cover;
+}
+.bloc:nth-child(7){
+    grid-area: g;
+    background: url(./media/bathroom.jpg)center/cover;
+}
+.bloc:nth-child(8){
+    grid-area: h;
+    background: white;
+}
+.bloc:nth-child(9){
+    grid-area: i;
+    background: rgb(193, 221, 230);
+}
+.bloc{
+    margin: 5px;
+    border-radius: 5px;
+}
+.location {
+    color: whitesmoke;
+    padding-left: 5px;
+    font-size: 2rem;
+}
+.prix {
+    color: whitesmoke;
+    padding-right: 5px;
+    font-size: 2rem;
+}
+#intro{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+
+}
+#presentation{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.photo {
+    margin: 10px;
+}
+#contact {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+
+
+
